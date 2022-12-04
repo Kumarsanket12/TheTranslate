@@ -10,8 +10,8 @@ import { map, catchError } from 'rxjs/operators'
 export class TranslatorService {
   public lang = "en";
   private headers = new HttpHeaders().set('Content-Type', 'application/json')
-    .set('Ocp-Apim-Subscription-Key', '<AZURE_API_KEY>')
-    .set('Ocp-Apim-Subscription-Region', 'centralindia');
+    .set('Ocp-Apim-Subscription-Key', '<25e969097e8a4708b812b982c989b9ea>')
+    .set('Ocp-Apim-Subscription-Region', 'eastus');
   private url = "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to="
 
   constructor(private httpClien: HttpClient) {
